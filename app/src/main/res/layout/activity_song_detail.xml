@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TvName"
+        android:text="Song Name"
+        android:layout_below="@+id/pauseSong"
+        android:layout_marginTop="30sp"
+        android:textColor="@color/black"
+        android:textSize="22sp"/>
+
+    <ImageView
+        android:id="@+id/songimage"
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/shapeofyou"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/songimage"
+        android:textSize="15sp"
+        android:layout_marginStart="10sp"/>
+
+    <ImageView
+        android:id="@+id/startSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/songimage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15sp"
+        android:src="@drawable/play" />
+    <ImageView
+        android:id="@+id/pauseSong"
+        android:layout_marginTop="15sp"
+        android:src="@drawable/pause"
+        android:layout_below="@+id/songimage"
+        android:layout_marginStart="60sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <ImageView
+        android:id="@+id/StopSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/songimage"
+        android:layout_marginStart="300sp"
+        android:layout_marginTop="15sp"
+        android:src="@drawable/stop" />
+
+
+
+
+
+</RelativeLayout>
